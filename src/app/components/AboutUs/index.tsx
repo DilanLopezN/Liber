@@ -21,24 +21,22 @@ const AboutUs = () => {
     }
   ]
   return (
-    <div className="about flex flex-col md:flex-row">
-      <div className="div-maior w-full md:w-3/4">
-        <div className="w-full h-full flex md:skew-x-12">
-          <div className="text-white flex-1 flex flex-col justify-center p-4 md:p-0 md:ml-14">
-            <h1 className="text-[36px] md:text-[68px] font-bold">
-              O que Fazemos
-            </h1>
-            <p className="text-custom-text-white mt-2 text-[24px] md:text-[48px]">
+    <div className="about ">
+      <div className="div-maior">
+        <div className="w-full h-full flex skew-x-12">
+          <div className=" text-white  flex-1 flex flex-col justify-center ml-14">
+            <h1 className="md:text-[68px] font-bold">O que Fazemos</h1>
+            <p className="text-custom-text-white mt-2 md:text-[48px]">
               Fixadores Especiais para Suas Necessidades
             </p>
-            <div className="flex flex-wrap">
+            <div className="flex max-md:flex-col max-md:overflow-hidden">
               {Texts.map(text => (
                 <React.Fragment key={text.textOne}>
                   <div className="flex flex-col mr-3 mt-2">
                     <p className="text-gray-300 text-lg">{text.textOne}</p>
                     <p className="text-white text-lg">{text.textTwo}</p>
                   </div>
-                  <div className="w-px h-14 m-4 bg-gray-300 hidden md:block" />
+                  <div className="w-px h-14 m-4 bg-gray-300  max-md:h-[2px] max-md:w-full" />
                 </React.Fragment>
               ))}
             </div>
@@ -46,7 +44,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="div-menor w-full md:w-1/4">
+      <div className="div-menor">
         <div className="filha"></div>
       </div>
     </div>

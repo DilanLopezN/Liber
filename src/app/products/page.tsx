@@ -1,11 +1,12 @@
 // pages/index.js
 import Image from 'next/image'
+import Link from 'next/link'
 
-const products = Array(30).fill({
-  name: 'Nome',
-  imageUrl: '/path/to/image.jpg', // Substitua pelo caminho real das imagens
+const products = Array.from({ length: 30 }, (_, index) => ({
+  name: 'Em Estoque',
+  imageUrl: `/products/LiberParafusos_${index + 1}.jpg`, // Substitua pelo caminho real das imagens
   link: '#'
-})
+}))
 
 export default function Products() {
   return (
@@ -21,9 +22,9 @@ export default function Products() {
               height={150}
             />
             <h2 className="mt-4 text-xl">{product.name}</h2>
-            <a href={product.link} className="mt-2 text-red-500">
-              Saiba Mais
-            </a>
+            <Link href="/budget" className="mt-2 text-red-500">
+              Realizar orçamento
+            </Link>
           </div>
         ))}
       </div>

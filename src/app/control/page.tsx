@@ -7,7 +7,7 @@ import Metro from '../../../public/control/metrologia.png'
 import Image from 'next/image'
 export default function Control() {
   return (
-    <div className="p-8">
+    <div className="p-8 mt-6">
       <h1 className="text-center text-2xl font-bold mb-2">
         Controle de Qualidade
       </h1>

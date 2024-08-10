@@ -1,6 +1,21 @@
+'use client'
+import React, { useState } from 'react'
+
 const Contact = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault()
+    const textMessage = `Nome Completo: ${name}%0AEmail: ${email}%0AAssunto: ${subject}%0AMensagem: ${message}`
+    const whatsappURL = `https://wa.me/5511916011694?text=${textMessage}`
+    window.open(whatsappURL, '_blank')
+  }
+
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 mt-6">
       <div className="flex flex-wrap justify-between">
         <div className="w-full md:w-1/2">
           <h1 className="text-4xl font-bold mb-4">Fale Conosco</h1>
@@ -39,12 +54,14 @@ const Contact = () => {
         </div>
         <div className="w-full md:w-1/2">
           <h2 className="text-2xl font-bold mb-4">Nos Mande uma mensagem</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-gray-700">Nome Completo</label>
               <input
                 type="text"
                 className="w-full border border-gray-300 p-2 rounded"
+                value={name}
+                onChange={e => setName(e.target.value)}
               />
             </div>
             <div className="mb-4">
@@ -52,6 +69,8 @@ const Contact = () => {
               <input
                 type="email"
                 className="w-full border border-gray-300 p-2 rounded"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
               />
             </div>
             <div className="mb-4">
@@ -59,6 +78,8 @@ const Contact = () => {
               <input
                 type="text"
                 className="w-full border border-gray-300 p-2 rounded"
+                value={subject}
+                onChange={e => setSubject(e.target.value)}
               />
             </div>
             <div className="mb-4">
@@ -66,6 +87,8 @@ const Contact = () => {
               <textarea
                 className="w-full border border-gray-300 p-2 rounded"
                 rows={4}
+                value={message}
+                onChange={e => setMessage(e.target.value)}
               ></textarea>
             </div>
             <button

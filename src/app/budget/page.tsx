@@ -84,14 +84,14 @@ function Budget() {
     *Prazo de Entrega:* ${formData.prazo}%0A
     *Mensagem:* ${formData.mensagem}`
 
-    const whatsappNumber = '5511996439823' // Coloque o número de WhatsApp aqui
+    const whatsappNumber = '5511916011694' // Coloque o número de WhatsApp aqui
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${textoOrcamento}`
     window.open(whatsappLink, '_blank')
   }
 
   return (
     <div
-      className="relative flex flex-row items-center justify-center min-h-screen p-4 bg-cover bg-center"
+      className="mt-6 relative flex flex-row items-center justify-center min-h-screen p-4 bg-cover bg-center"
       style={{ backgroundImage: `url(${BgBudget.src})` }}
     >
       {/* <OurCustomers /> */}
