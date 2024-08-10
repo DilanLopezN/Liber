@@ -1,0 +1,48 @@
+.about {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  overflow: hidden;
+  position: relative;
+  background-color: #6B7280;
+  flex-direction: column;
+}
+
+.div-maior {
+  z-index: 10;
+  height: 100%;
+  background-color: #6B7280;
+  transform: skewX(0deg); /* Reset skew for mobile */
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+  }
+
+  .div-maior {
+    transform: skewX(-12deg);
+  }
+}
+
+.div-menor {
+  z-index: 1;
+  height: 100%;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .div-menor {
+    left: 75%;
+    width: 25%;
+  }
+}
+
+.filha {
+  background: url('../../../../public/aboutus.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
