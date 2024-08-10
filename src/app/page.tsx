@@ -5,6 +5,7 @@ import GradientSections from './components/GradientSections'
 import Footer from './components/Footer'
 import Segments from './components/Segments'
 import Customers from './components/Customer'
+import Navbar from './components/Header'
 
 export default function Home() {
   return (

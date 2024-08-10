@@ -16,7 +16,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-screen sm:fixed bg-white border border-gray-200 dark:border-gray-700 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 shadow z-50 ">
+      <nav
+        className={`
+          lg:bg-black
+      lg:bg-opacity-30 lg:backdrop-filter lg:backdrop-blur-lg lg:backdrop-brightness-50
+          fixed top-0 w-full sm:fixed  px-2 sm:px-4 py-2.5 rounded  shadow z-50`}
+      >
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <a href="/" className="flex items-center w-[68px] h-[68px]">
             <Image
@@ -61,7 +66,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/"
-                  className={`lg:text-lg block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
+                  className={`lg:text-xl block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
                     
                     ${
                       isActive('/')
@@ -71,8 +76,8 @@ const Navbar = () => {
                     
                     ${
                       isActive('/')
-                        ? ' lg:text-red-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
-                        : 'lg:text-gray-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
+                        ? ' lg:text-red-500 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
+                        : 'lg:text-white lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
                     }`}
                   aria-current="page"
                 >
@@ -82,7 +87,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/about"
-                  className={`lg:text-lg block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
+                  className={`lg:text-xl block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
                     
                     ${
                       isActive('/about')
@@ -92,8 +97,8 @@ const Navbar = () => {
                     
                     ${
                       isActive('/about')
-                        ? ' lg:text-red-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
-                        : 'lg:text-gray-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
+                        ? ' lg:text-red-500 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
+                        : 'lg:text-white lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
                     }`}
                   aria-current="page"
                 >
@@ -103,7 +108,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/products"
-                  className={`lg:text-lg block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
+                  className={`lg:text-xl block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
                     
                     ${
                       isActive('/products')
@@ -113,8 +118,8 @@ const Navbar = () => {
                     
                     ${
                       isActive('/products')
-                        ? ' lg:text-red-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
-                        : 'lg:text-gray-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
+                        ? ' lg:text-red-500 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
+                        : 'lg:text-white lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
                     }`}
                   aria-current="page"
                 >
@@ -124,7 +129,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/contact"
-                  className={`lg:text-lg block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
+                  className={`lg:text-xl block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
                     
                     ${
                       isActive('/contact')
@@ -134,8 +139,8 @@ const Navbar = () => {
                     
                     ${
                       isActive('/contact')
-                        ? ' lg:text-red-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
-                        : 'lg:text-gray-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
+                        ? ' lg:text-red-500 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
+                        : 'lg:text-white lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
                     }`}
                   aria-current="page"
                 >
@@ -145,7 +150,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/control"
-                  className={`lg:text-lg block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
+                  className={`lg:text-xl  block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
                     
                     ${
                       isActive('/control')
@@ -155,8 +160,8 @@ const Navbar = () => {
                     
                     ${
                       isActive('/control')
-                        ? ' lg:text-red-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
-                        : 'lg:text-gray-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
+                        ? ' lg:text-red-500 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
+                        : 'lg:text-white lg:bg-transparent lg: md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
                     }`}
                   aria-current="page"
                 >
@@ -166,7 +171,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/documents"
-                  className={`lg:text-lg block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
+                  className={`lg:text-xl block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
                     
                     ${
                       isActive('/documents')
@@ -176,8 +181,8 @@ const Navbar = () => {
                     
                     ${
                       isActive('/documents')
-                        ? ' lg:text-red-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
-                        : 'lg:text-gray-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
+                        ? ' lg:text-red-500 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
+                        : 'lg:text-white lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
                     }`}
                   aria-current="page"
                 >
@@ -187,7 +192,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/budget"
-                  className={`lg:text-lg block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
+                  className={`lg:text-xl block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
                     
                     ${
                       isActive('/budget')
@@ -197,8 +202,8 @@ const Navbar = () => {
                     
                     ${
                       isActive('/budget')
-                        ? ' lg:text-red-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
-                        : 'lg:text-gray-700 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
+                        ? ' lg:text-red-500 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
+                        : 'lg:text-white lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
                     }`}
                   aria-current="page"
                 >

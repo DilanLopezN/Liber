@@ -17,10 +17,11 @@ import Banner3 from '../../../public/banner3.png'
 
 // import required modules
 import { Pagination } from 'swiper/modules'
+import Navbar from './Header'
 
 export default function Carrousel() {
   return (
-    <div className="w-full h-full z-10 ">
+    <div className="w-full   h-[820px]  ">
       <Swiper
         autoplay={true}
         pagination={{
@@ -30,15 +31,19 @@ export default function Carrousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="relative w-full h-full">
-            <Image src={Banner} alt="Banner de parafusos" />
+          <div className="block w-full h-full">
+            <Image
+              src={Banner}
+              alt="Banner de parafusos"
+              className="h-[600px]"
+            />
             <div className="absolute inset-0 flex flex-col items-center md:items-start md:pl-10 justify-center md:-translate-y-10">
-              <h1 className="text-white text-center md:text-left bg-black bg-opacity-50 p-4 rounded md:text-3xl">
+              <h1 className="text-white text-center md:text-left  p-4 rounded md:text-3xl">
                 <span className="text-red-600">Soluções</span> em Parafusos{' '}
                 <br />
                 Especiais para o Mercado Automotivo
               </h1>
-              <p className="text-white text-sm p-2 md:text-left md:text-2xl md:w-[680px]">
+              <p className="md:text-justify text-white text-sm p-2  md:text-2xl md:w-[680px]">
                 Na LIBER INDUSTRIAL LTDA, combinamos tradição e inovação para
                 oferecer fixadores de alta qualidade que atendem às necessidades
                 específicas de nossos clientes.
@@ -57,14 +62,14 @@ export default function Carrousel() {
             <Image
               src={Banner2}
               alt="Banner de parafusos"
-              className="object-contain"
+              className="object-contain "
             />
             <div className="absolute inset-0 flex flex-col items-center md:items-start md:pl-10 justify-center md:-translate-y-10">
-              <h1 className="text-white text-center md:text-left bg-black bg-opacity-50 p-4 rounded md:text-3xl">
+              <h1 className="text-white text-center md:text-left p-4 rounded md:text-3xl">
                 <span className="text-red-600">Qualidade</span> e Inovação{' '}
                 <br />
               </h1>
-              <p className="text-white text-sm p-2 md:text-left md:text-2xl md:w-[680px]">
+              <p className="text-white text-justify text-sm p-2 md:text-left md:text-2xl md:w-[680px]">
                 Nossos produtos são projetados para atender às demandas mais
                 exigentes, com um compromisso inabalável com a qualidade e a
                 inovação tecnológica.
@@ -82,11 +87,11 @@ export default function Carrousel() {
           <div className="relative w-full h-full">
             <Image src={Banner3} alt="Banner de parafusos" />
             <div className="absolute inset-0 flex flex-col items-center md:items-start md:pl-10 justify-center md:-translate-y-10">
-              <h1 className="text-white text-center md:text-left bg-black bg-opacity-50 p-4 rounded md:text-3xl">
+              <h1 className="text-white text-center md:text-justify bg-black bg-opacity-50 p-4 rounded md:text-3xl">
                 <span className="text-red-600">Atendemos</span> Todos segmentos{' '}
                 <br />
               </h1>
-              <p className="text-white shadow-sm text-sm md:text-left md:text-2xl md:w-[680px] bg-black bg-opacity-50 p-4">
+              <p className="text-white text-sm md:text-justify md:text-2xl md:w-[680px] bg-black bg-opacity-20 p-4 mt-2 rounded-sm">
                 De automotivo a industrial, nossa expertise nos permite fornecer
                 soluções de fixação para uma ampla variedade de setores.
               </p>

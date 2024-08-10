@@ -10,7 +10,7 @@ const OurValues = () => {
   return (
     <div className="flex flex-col items-center p-4 sm:p-6 md:p-8">
       <div className="w-full max-w-4xl flex flex-col md:flex-row">
-        <div className="flex flex-col items-center text-center mb-8 md:w-1/2">
+        <div className="lg:mr-4 flex flex-col items-center text-center mb-8 md:w-1/2">
           <Mission />
           <h1 className="text-2xl sm:text-3xl font-bold mb-2">Missão</h1>
           <p>
@@ -76,10 +76,10 @@ const OurValues = () => {
 
 export default function AboutUs() {
   return (
-    <div className="bg-white text-gray-900">
+    <div className="bg-white text-gray-900 lg:mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <section className="flex flex-col md:flex-row mb-12 w-full h-full">
-          <div className="w-full md:w-1/2 h-full">
+          <div className="w-full md:w-1/2 h-full mr-4">
             <div className="flex flex-col w-full">
               <h2 className="uppercase text-gray-500 font-medium mb-2">
                 Sobre nós

@@ -10,7 +10,11 @@ const products = Array.from({ length: 30 }, (_, index) => ({
 
 export default function Products() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div
+      className="
+    lg:mt-20
+    container mx-auto px-4 py-8"
+    >
       <h1 className="text-4xl font-bold mb-8">Produtos</h1>
       <div className="grid grid-cols-3 gap-4">
         {products.map((product, index) => (

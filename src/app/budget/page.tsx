@@ -91,7 +91,7 @@ function Budget() {
 
   return (
     <div
-      className="mt-6 relative flex flex-row items-center justify-center min-h-screen p-4 bg-cover bg-center"
+      className="lg:mt-20 relative flex flex-row items-center justify-center min-h-screen p-4 bg-cover bg-center"
       style={{ backgroundImage: `url(${BgBudget.src})` }}
     >
       {/* <OurCustomers /> */}

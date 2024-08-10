@@ -1,11 +1,15 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
+
 import Navbar from './components/Header'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsButton'
 
-const inter = Inter({ subsets: ['latin'] })
+const serrat = Montserrat({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,8 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
+      <Navbar />
+      <body className={`${serrat.className} m-0 p-0 w-full h-full box-border `}>
         {children}
         <WhatsAppButton />
         <Footer />

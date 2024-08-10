@@ -132,7 +132,7 @@ const manuals = [
 
 const Documentation = () => {
   return (
-    <div className="container mx-auto p-6 mt-6">
+    <div className="container mx-auto p-6 mt-6 lg:mt-20">
       <h1 className="text-3xl font-bold text-red-600 mb-4">
         Documentação e Autorizações
       </h1>
@@ -147,8 +147,8 @@ const Documentation = () => {
             <h2 className="text-2xl font-semibold mb-2">{doc.title}</h2>
             <a
               href={doc.downloadLink}
-              download={true}
               target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-500"
             >
               Download PDF
@@ -167,7 +167,12 @@ const Documentation = () => {
               className="mx-auto mb-4"
             />
             <h3 className="text-lg font-semibold mb-2">{manual.title}</h3>
-            <a href={manual.downloadLink} className="text-blue-500">
+            <a
+              href={manual.downloadLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500"
+            >
               Download PDF
             </a>
           </div>

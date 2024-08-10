@@ -15,7 +15,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="container mx-auto p-6 mt-6">
+    <div className="container mx-auto p-6 mt-6 lg:mt-20">
       <div className="flex flex-wrap justify-between">
         <div className="w-full md:w-1/2">
           <h1 className="text-4xl font-bold mb-4">Fale Conosco</h1>

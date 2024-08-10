@@ -11,7 +11,7 @@ const GradientSections = () => {
     <div>
       <div className="flex flex-col md:flex-row h-auto md:h-[448px] w-full">
         <div className="w-full md:w-1/2 bg-custom-gray-gradient flex flex-col items-center justify-center p-4">
-          <div className="mb-8">
+          <div className="mb-8 mr-2 ml-2">
             <div className="flex items-center mb-4">
               <Image
                 src={GradientBuild}
@@ -22,7 +22,7 @@ const GradientSections = () => {
                 Fabricação de Parafusos e Fixadores Especiais
               </h1>
             </div>
-            <p className="text-sm md:text-base text-gray-200 font-semibold">
+            <p className="text-sm md:text-base text-gray-200 font-semibold text-justify mr-4 ml-4">
               Produzimos parafusos e fixadores customizados de acordo com as
               necessidades específicas de nossos clientes. Com nossa experiência
               em engenharia e fabricação, garantimos soluções de fixação que
@@ -30,7 +30,7 @@ const GradientSections = () => {
               material ou funcionalidade.
             </p>
           </div>
-          <div>
+          <div className=" mr-2 ml-2">
             <div className="flex items-center mb-4">
               <Image
                 src={GradientControl}
@@ -41,7 +41,7 @@ const GradientSections = () => {
                 Controle Rigoroso de Qualidade
               </h1>
             </div>
-            <p className="text-sm md:text-base text-gray-200 font-semibold">
+            <p className="text-sm md:text-base text-gray-200 font-semibold text-justify mr-4 ml-4">
               Produzimos parafusos e fixadores customizados de acordo com as
               necessidades específicas de nossos clientes. Com nossa experiência
               em engenharia e fabricação, garantimos soluções de fixação que
@@ -71,7 +71,7 @@ const GradientSections = () => {
           <div className="absolute inset-0 bg-black opacity-50" />
         </div>
         <div className="w-full md:w-1/2 bg-custom-gray-gradient flex flex-col items-center justify-center p-4">
-          <div className="mb-8">
+          <div className="mb-8 mr-2 ml-2">
             <div className="flex items-center mb-4">
               <Image
                 src={GradientTech}
@@ -82,7 +82,7 @@ const GradientSections = () => {
                 Desenvolvimento e Inovação Tecnológica
               </h1>
             </div>
-            <p className="text-sm md:text-base text-gray-200 font-semibold">
+            <p className="text-sm md:text-base text-gray-200 font-semibold text-justify mr-4 ml-4">
               Investimos continuamente em pesquisa e desenvolvimento para manter
               nossos produtos na vanguarda da tecnologia. Nossa equipe de
               engenharia está sempre explorando novas técnicas e materiais para
@@ -90,14 +90,14 @@ const GradientSections = () => {
               produtos.
             </p>
           </div>
-          <div>
+          <div className=" mr-2 ml-2">
             <div className="flex items-center mb-4">
               <Image
                 src={GradientPerson}
                 alt=""
                 className="mr-4 w-12 h-12 md:w-16 md:h-16"
               />
-              <h1 className="text-lg md:text-[28px] text-white font-bold">
+              <h1 className="text-lg md:text-[28px] text-white font-bold text-justify mr-4 ml-4">
                 Parceria com Clientes e Atendimento Personalizado
               </h1>
             </div>
