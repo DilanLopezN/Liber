@@ -20,7 +20,7 @@ import { Pagination } from 'swiper/modules'
 
 export default function Carrousel() {
   return (
-    <div className="w-full h-full z-10">
+    <div className="w-full h-full z-10 ">
       <Swiper
         autoplay={true}
         pagination={{
