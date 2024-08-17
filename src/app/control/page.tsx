@@ -7,7 +7,11 @@ import Metro from '../../../public/control/metrologia.png'
 import Image from 'next/image'
 export default function Control() {
   return (
-    <div className="p-8 mt-6 lg:mt-20">
+    <div
+      className="p-8 mt-6 lg:mt-20 max-sm:mt-20
+    max-sm:mx-2
+    "
+    >
       <h1 className="text-center text-2xl font-bold mb-2">
         Controle de Qualidade
       </h1>
@@ -15,7 +19,7 @@ export default function Control() {
         Controle de Qualidade em Parafusos, Porcas e Fixadores
       </h2>
       <p className="mb-8 text-lg text-justify">
-        Na LIEBER INDUSTRIAL LTDA, acreditamos que a qualidade não é apenas uma
+        Na LIBER INDUSTRIAL LTDA, acreditamos que a qualidade não é apenas uma
         característica dos nossos produtos, mas o pilar que sustenta toda a
         nossa operação. Em um mundo onde os parafusos são fundamentais para a
         integridade e segurança de diversos sistemas, desde simples utensílios
@@ -31,20 +35,20 @@ export default function Control() {
       </p>
       <div className="flex flex-col gap-8">
         {/* LEFT IMG */}
-        <div className="flex  items-center ">
+        <div className="flex  items-center max-sm:flex-col  ">
           <Image
             src={NotDestruct}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm"
+            className="w-1/2 h-auto rounded-sm max-sm:hidden"
           />
-          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ml-4">
+          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ml-4  max-sm:w-full ">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
               1
             </div>
-            <h3 className="text-2xl font-semibold mb-2">
+            <h3 className="text-2xl font-semibold mb-2  max-sm:w-full">
               Ensaios Mecânicos - Não Destrutivos (ENDs)
             </h3>
-            <p className="text-xl text-justify mt-4">
+            <p className="text-xl text-justify mt-4 max-sm:text-sm">
               Os Ensaios Não Destrutivos (ENDs) são cruciais para garantir a
               integridade dos nossos fixadores sem comprometer sua
               funcionalidade. Utilizamos métodos avançados para detectar
@@ -59,15 +63,15 @@ export default function Control() {
         </div>
 
         {/* RIGHT IMG*/}
-        <div className="flex  items-center ">
-          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ml-4">
-            <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
+        <div className="flex  items-center max-sm:flex-col ">
+          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ml-4   max-sm:w-full">
+            <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2 ">
               2
             </div>
             <h3 className="text-2xl font-semibold mb-2">
               Ensaios Mecânicos - Destrutivos
             </h3>
-            <p className="text-xl text-justify mt-4">
+            <p className="text-xl text-justify mt-4 max-sm:text-sm">
               Em contraste, os Ensaios Destrutivos envolvem submeter os
               fixadores a condições extremas para avaliar sua resistência e
               comportamento até o ponto de falha. Embora esses testes resultem
@@ -81,22 +85,22 @@ export default function Control() {
           <Image
             src={Destruct}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm"
+            className="w-1/2 h-auto rounded-sm max-sm:hidden"
           />
         </div>
 
-        <div className="flex  items-center ">
+        <div className="flex  items-center max-sm:flex-col ">
           <Image
             src={Corrosao}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm"
+            className="w-1/2 h-auto rounded-sm max-sm:hidden"
           />
-          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ml-4">
+          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ml-4 max-sm:w-full">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
               3
             </div>
             <h3 className="text-2xl font-semibold mb-2">Ensaios de Corrosão</h3>
-            <p className="text-xl text-justify mt-4">
+            <p className="text-xl text-justify mt-4 max-sm:text-sm">
               Para garantir que nossos fixadores resistam ao teste do tempo e às
               condições ambientais adversas, realizamos ensaios de corrosão em
               câmaras especialmente projetadas. Essas câmaras simulam ambientes
@@ -108,15 +112,15 @@ export default function Control() {
           </div>
         </div>
 
-        <div className="flex  items-center ">
-          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ">
+        <div className="flex  items-center max-sm:flex-col">
+          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 max-sm:w-full ">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
               4
             </div>
             <h3 className="text-2xl font-semibold mb-2">
               Ensaios Metalográficos
             </h3>
-            <p className="text-xl text-justify mt-4">
+            <p className="text-xl text-justify mt-4 max-sm:text-sm">
               A análise metalográfica é fundamental para entender a
               microestrutura dos materiais que utilizamos. Utilizando
               microscópios metalúrgicos de alta precisão, examinamos a
@@ -131,22 +135,22 @@ export default function Control() {
           <Image
             src={Metalo}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm"
+            className="w-1/2 h-auto rounded-sm max-sm:hidden"
           />
         </div>
 
-        <div className="flex  items-center ">
+        <div className="flex  items-center max-sm:flex-col ">
           <Image
             src={Qumica}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm"
+            className="w-1/2 h-auto rounded-sm max-sm:hidden"
           />
-          <div className="flex flex-col  justify-center  text-center w-1/2 p-6">
+          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 max-sm:w-full">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
               5
             </div>
             <h3 className="text-2xl font-semibold mb-2">Análises Químicas</h3>
-            <p className="text-xl text-justify mt-4">
+            <p className="text-xl text-justify mt-4 max-sm:text-sm">
               As análises químicas fornecem uma visão detalhada da composição
               dos materiais usados em nossos fixadores. Essas análises são
               cruciais para garantir que cada liga metálica esteja de acordo com
@@ -158,13 +162,13 @@ export default function Control() {
             </p>
           </div>
         </div>
-        <div className="flex  items-center ">
-          <div className="flex flex-col  justify-center  text-center w-1/2 p-6">
+        <div className="flex  items-center max-sm:flex-col">
+          <div className="flex flex-col  justify-center  text-center w-1/2 p-6 max-sm:w-full">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
               6
             </div>
             <h3 className="text-2xl font-semibold mb-2">Metrologia</h3>
-            <p className="text-xl text-justify mt-4">
+            <p className="text-xl text-justify mt-4 max-sm:text-sm">
               A precisão dimensional é um aspecto crítico da qualidade dos
               fixadores. Utilizamos equipamentos de medição de última geração
               para verificar as dimensões e tolerâncias de cada peça produzida.
@@ -176,7 +180,7 @@ export default function Control() {
           <Image
             src={Metro}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm"
+            className="w-1/2 h-auto rounded-sm max-sm:hidden"
           />
         </div>
       </div>

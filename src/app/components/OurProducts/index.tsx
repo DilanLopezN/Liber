@@ -1,9 +1,9 @@
 'use client'
 import Image from 'next/image'
-import Parafuso from '../../../../public/parafuso.svg'
-import Especiais from '../../../../public/especiais.svg'
-import Fixadores from '../../../../public/fixadores.svg'
-import Pinos from '../../../../public/pinos.svg'
+import Parafuso from '../../../../public/parafuso.png'
+import Especiais from '../../../../public/especiais.png'
+import Fixadores from '../../../../public/fixadores.png'
+import Pinos from '../../../../public/pinos.png'
 import Eye from '../../../../public/eye.svg'
 import EngOne from '../../../../public/engrenagem.svg'
 import EngTwe from '../../../../public/engrenagem2.svg'
@@ -15,33 +15,89 @@ const OurProducts = () => {
   return (
     <div className="flex h-auto flex-col w-full items-center sm:w-full sm:overflow-hidden md:overflow-hidden">
       <div className="md:h-[700px] w-full flex flex-col items-center justify-center m-2 overflow-hidden">
-        <h1 className="md:text-3xl  font-bold">Nossos Produtos</h1>
-        <div className="flex flex-wrap items-center justify-center md:w-[800px] md:h-[400px] mt-8">
-          <div className="w-1/2 h-1/2 border-r-2 border-b-2 border-black flex flex-col items-center justify-center ">
-            <Image src={Parafuso} alt="" />
-            <h1 className="mt-2 font-bold text-lg">Parafusos</h1>
-            <button className="text-white bg-black w-4/5 p-1 m-2 rounded-xl">
+        <h1 className="md:text-3xl max-sm:text-lg max-sm:mt-2  font-bold">
+          Nossos Produtos
+        </h1>
+        <div
+          className="flex flex-wrap items-center justify-center md:w-[800px] md:h-[400px] mt-8
+        max-sm:p-2 max-sm:w-full max-sm:justify-around
+        "
+        >
+          <div
+            className="w-1/2 h-1/2 border-r-2 lg:border-b-2 border-black flex flex-col items-center justify-center 
+          max-sm:border-2 max-sm:border-black max-sm:rounded-md
+          max-sm:w-[138px] max-sm:h-[148px] max-sm:mb-2 
+          "
+          >
+            <Image
+              src={Parafuso}
+              alt=""
+              className="w-8 h-8
+         
+            "
+            />
+            <h1 className="mt-2 font-bold lg:text-lg max-sm:text-md">
+              Parafusos
+            </h1>
+            <button
+              className="text-white bg-black w-4/5 p-1 m-2 rounded-xl
+            max-sm:w-[128px] max-sm:p-2 
+            "
+            >
               Ver produtos
             </button>
           </div>
-          <div className="w-1/2 h-1/2 border-b-2  border-black flex flex-col items-center justify-center ">
-            <Image src={Especiais} alt="" />
-            <h1 className="mt-2 font-bold text-lg">Especiais</h1>
-            <button className="text-white bg-black w-4/5 p-1 m-2 rounded-xl">
+          <div
+            className="w-1/2 h-1/2  border-b-2 border-black flex flex-col items-center justify-center 
+              max-sm:border-2 max-sm:border-black max-sm:rounded-md
+              max-sm:w-[138px] max-sm:h-[148px] max-sm:mb-2 
+              "
+          >
+            <Image src={Especiais} alt="" className="w-8 h-8" />
+            <h1 className="mt-2 font-bold lg:text-lg max-sm:text-md">
+              Especiais
+            </h1>
+            <button
+              className="text-white bg-black w-4/5 p-1 m-2 rounded-xl
+            max-sm:w-[128px] max-sm:p-2 
+            "
+            >
               Ver produtos
             </button>
           </div>
-          <div className="w-1/2 h-1/2 border-r-2  border-black  flex flex-col items-center justify-center ">
-            <Image src={Fixadores} alt="" />
-            <h1 className="mt-2 font-bold text-lg">Fixadores</h1>
-            <button className="text-white bg-black w-4/5 p-1 m-2 rounded-xl">
+          <div
+            className="w-1/2 h-1/2 lg:border-r-2  border-black flex flex-col items-center justify-center 
+             max-sm:border-2 max-sm:border-black max-sm:rounded-md
+             max-sm:w-[138px] max-sm:h-[148px] max-sm:mb-2 
+             "
+          >
+            <Image src={Fixadores} alt="" className="w-8 h-8" />
+            <h1 className="mt-2 font-bold lg:text-lg max-sm:text-md">
+              Fixadores
+            </h1>
+            <button
+              className="text-white bg-black w-4/5 p-1 m-2 rounded-xl
+            max-sm:w-[128px] max-sm:p-2 
+            "
+            >
               Ver produtos
             </button>
           </div>
-          <div className="w-1/2 h-1/2 flex flex-col items-center justify-center ">
-            <Image src={Pinos} alt="" />
-            <h1 className="mt-2 font-bold text-lg">Pinos e tirantes</h1>
-            <button className="text-white bg-black w-4/5 p-1 m-2 rounded-xl">
+          <div
+            className="w-1/2 h-1/2  border-black flex flex-col items-center justify-center 
+            max-sm:border-2 max-sm:border-black max-sm:rounded-md
+            max-sm:w-[138px] max-sm:h-[148px] max-sm:mb-2 
+            "
+          >
+            <Image src={Pinos} alt="" className="w-8 h-8" />
+            <h1 className="mt-2 font-bold lg:text-lg max-sm:text-[15px]">
+              Pinos e tirantes
+            </h1>
+            <button
+              className="text-white bg-black w-4/5 p-1 m-2 rounded-xl
+            max-sm:w-[128px] max-sm:p-2 
+            "
+            >
               Ver produtos
             </button>
           </div>

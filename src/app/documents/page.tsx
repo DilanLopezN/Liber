@@ -132,7 +132,7 @@ const manuals = [
 
 const Documentation = () => {
   return (
-    <div className="container mx-auto p-6 mt-6 lg:mt-20">
+    <div className="container mx-auto p-6 mt-6 lg:mt-20 max-sm:mt-20">
       <h1 className="text-3xl font-bold text-red-600 mb-4">
         Documentação e Autorizações
       </h1>

@@ -51,7 +51,7 @@ const GradientSections = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 relative h-[200px] md:h-full">
+        <div className="hidden md:block w-full md:w-1/2 relative h-[200px] md:h-full">
           <Image
             src={GradientOne}
             alt=""
@@ -61,8 +61,8 @@ const GradientSections = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row h-auto md:h-[448px] w-full mt-4 md:mt-0">
-        <div className="w-full md:w-1/2 relative h-[200px] md:h-full">
+      <div className="flex flex-col md:flex-row h-auto md:h-[448px] w-full mt-4 md:mt-0 max-sm:mt-0">
+        <div className="hidden md:block w-full md:w-1/2 relative h-[200px] md:h-full">
           <Image
             src={GradientTwo}
             alt=""

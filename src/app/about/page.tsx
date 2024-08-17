@@ -76,7 +76,7 @@ const OurValues = () => {
 
 export default function AboutUs() {
   return (
-    <div className="bg-white text-gray-900 lg:mt-20">
+    <div className="bg-white text-gray-900 lg:mt-20 max-sm:mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <section className="flex flex-col md:flex-row mb-12 w-full h-full">
           <div className="w-full md:w-1/2 h-full mr-4">
@@ -93,8 +93,8 @@ export default function AboutUs() {
               A LIBER INDUSTRIAL LTDA tem suas raízes em uma das primeiras
               empresas fabricantes de parafusos no Brasil. Hoje, sob a
               administração da terceira geração, a paixão pelos parafusos
-              continua e honra as velhas eras da família Poliseli. Desde a visão
-              do Liberale Poliseli, que nasceu em Monte Alegre do Sul em 1909,
+              continua e honra as velhas eras da família Polisel. Desde a visão
+              do Liberale Polisel, que nasceu em Monte Alegre do Sul em 1909,
               até os dias de hoje, a empresa evoluiu mantendo o legado de
               criatividade, inovação e dedicação técnica.
             </p>
@@ -135,13 +135,13 @@ export default function AboutUs() {
                 className="rounded-lg shadow-lg"
               />
               <div className="mt-6 flex flex-col md:flex-row">
-                <div className="w-[18px] h-[100px] md:h-[200px] m-4 md:m-6 bg-red-500" />
+                <div className="w-[18px] h-[100px] md:h-[200px] m-4 md:m-6 bg-red-500   max-sm:w-10/12 max-sm:h-[12px]" />
                 <div>
                   <h2 className="text-2xl font-bold mb-4">
                     A Fábrica Original
                   </h2>
                   <p className="text-lg">
-                    Nossa jornada começou em 1942, quando Liberale Poliseli e
+                    Nossa jornada começou em 1942, quando Liberale Polisel e
                     seus irmãos instalaram uma pequena fábrica de parafusos. Com
                     máquinas projetadas e construídas pelo próprio Liberale,
                     essa pequena fábrica marcou o início de uma tradição de

@@ -23,9 +23,15 @@ const AboutUs = () => {
   return (
     <div className="about ">
       <div className="div-maior">
-        <div className="w-full h-full flex skew-x-12">
-          <div className=" text-white  flex-1 flex flex-col justify-center ml-14">
-            <h1 className="md:text-[68px] font-bold">O que Fazemos</h1>
+        <div className="w-full h-full flex lg:skew-x-12 max-sm:">
+          <div
+            className=" text-white  flex-1 flex flex-col justify-center ml-14
+            max-sm:m-0 max-sm:p-4
+          "
+          >
+            <h1 className="md:text-[68px] font-bold max-sm:text-2xl">
+              O que Fazemos
+            </h1>
             <p className="text-custom-text-white mt-2 md:text-[48px]">
               Fixadores Especiais para Suas Necessidades
             </p>

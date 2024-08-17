@@ -1,56 +1,5 @@
 'use client'
 import React, { useState } from 'react'
-import BgBudget from '../../../public/bgbudget.png'
-import Fania from '../../../public/customers/fania.png'
-import Arteb from '../../../public/customers/arteb.png'
-import Cabovel from '../../../public/customers/cabovel.png'
-import ARayumond from '../../../public/customers/raymond.png'
-import BrasiLux from '../../../public/customers/braslux.png'
-import Cofran from '../../../public/customers/cofan.png'
-import Dura from '../../../public/customers/dura.png'
-import Ficosa from '../../../public/customers/fecosa.png'
-import JapaFlex from '../../../public/customers/jepaflex.png'
-import HtIllu from '../../../public/customers/lantermax.png'
-import Nino from '../../../public/customers/ninof.png'
-import Orgus from '../../../public/customers/orgus.png'
-import Welcon from '../../../public/customers/welcon.png'
-import Image from 'next/image'
-
-const OurCustomers = () => {
-  const customers = [
-    { nome: 'Fania', imagem: Fania },
-    { nome: 'Cabovel', imagem: Cabovel },
-    { nome: 'ARaymond', imagem: ARayumond },
-    { nome: 'Arteb', imagem: Arteb },
-    { nome: 'Braslux', imagem: BrasiLux },
-    { nome: 'Cofran', imagem: Cofran },
-    { nome: 'Dura', imagem: Dura },
-    { nome: 'Ficosa', imagem: Ficosa },
-    { nome: 'Japaflex', imagem: JapaFlex },
-    { nome: 'HT Illuminated', imagem: HtIllu },
-    { nome: 'Nino Faróis', imagem: Nino },
-    { nome: 'Orgus', imagem: Orgus },
-    { nome: 'Welcon', imagem: Welcon }
-  ]
-  return (
-    <div className="bg-white bg-opacity-30 backdrop-filter backdrop-blur-md backdrop-brightness-125 shadow-lg rounded-lg p-6 max-w-xs mr-24">
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-6 w-full lg:w-2/3">
-        {customers.map(cliente => (
-          <div
-            key={cliente.nome}
-            className="flex items-center justify-center h-24"
-          >
-            <Image
-              src={cliente.imagem}
-              alt={cliente.nome}
-              className="w-full h-full"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
 
 function Budget() {
   const [formData, setFormData] = useState({
@@ -91,11 +40,11 @@ function Budget() {
 
   return (
     <div
-      className="lg:mt-20 relative flex flex-row items-center justify-center min-h-screen p-4 bg-cover bg-center"
-      style={{ backgroundImage: `url(${BgBudget.src})` }}
+      className="lg:mt-20  flex flex-row items-center justify-center min-h-screen p-4 
+      max-sm:mt-20 max-sm:overflow-hidden max-sm:mx-2 max-sm:w-full max-sm:h-full
+      "
     >
-      {/* <OurCustomers /> */}
-      <div className="bg-white bg-opacity-50 backdrop-filter backdrop-blur-md backdrop-brightness-125 shadow-lg rounded-lg p-6 max-w-xl w-full">
+      <div className="bg-white  rounded-lg p-6 max-w-xl w-full max-sm:w-full max-sm:h-full">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">
           Faça Seu Orçamento
         </h2>
@@ -149,10 +98,10 @@ function Budget() {
           <label className="block text-gray-700">
             Produto ou Serviço Necessário
           </label>
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 max-sm:flex-col  max-sm:gap-4 max-sm:space-x-0">
             <button
               onClick={() => setFormData({ ...formData, produto: 'Parafusos' })}
-              className={`flex-1 p-2 border border-gray-300 rounded ${
+              className={`max-sm:w-full  flex-1 p-2 border border-gray-300 rounded ${
                 formData.produto === 'Parafusos' ? 'bg-gray-300' : ''
               }`}
             >
@@ -160,7 +109,7 @@ function Budget() {
             </button>
             <button
               onClick={() => setFormData({ ...formData, produto: 'Porcas' })}
-              className={`flex-1 p-2 border border-gray-300 rounded ${
+              className={`max-sm:w-full  flex-1 p-2 border border-gray-300 rounded ${
                 formData.produto === 'Porcas' ? 'bg-gray-300' : ''
               }`}
             >
@@ -168,7 +117,7 @@ function Budget() {
             </button>
             <button
               onClick={() => setFormData({ ...formData, produto: 'Pinos' })}
-              className={`flex-1 p-2 border border-gray-300 rounded ${
+              className={`max-sm:w-full  flex-1 p-2 border border-gray-300 rounded ${
                 formData.produto === 'Pinos' ? 'bg-gray-300' : ''
               }`}
             >
@@ -176,7 +125,7 @@ function Budget() {
             </button>
             <button
               onClick={() => setFormData({ ...formData, produto: 'Travas' })}
-              className={`flex-1 p-2 border border-gray-300 rounded ${
+              className={`max-sm:w-full  flex-1 p-2 border border-gray-300 rounded ${
                 formData.produto === 'Travas' ? 'bg-gray-300' : ''
               }`}
             >
@@ -184,7 +133,7 @@ function Budget() {
             </button>
             <button
               onClick={() => setFormData({ ...formData, produto: 'Fixadores' })}
-              className={`flex-1 p-2 border border-gray-300 rounded ${
+              className={`max-sm:w-full  flex-1 p-2 border border-gray-300 rounded ${
                 formData.produto === 'Fixadores' ? 'bg-gray-300' : ''
               }`}
             >
