@@ -37,13 +37,13 @@ export default function Carrousel() {
             />
             <div className="absolute inset-0 flex flex-col items-center md:items-start md:pl-10 justify-center md:-translate-y-10">
               <h1
-                className="text-white text-center md:text-left  p-4 rounded md:text-3xl
+                className="font-bold text-white text-center md:text-left  p-4 rounded md:text-3xl
               
               max-sm:text-lg
               "
               >
-                <span className="text-red-600">Soluções</span> em Parafusos{' '}
-                <br />
+                <span className="text-red-600 font-bold">Soluções</span> em
+                Parafusos <br />
                 Especiais para o Mercado Automotivo
               </h1>
               <p className="md:text-justify text-white text-sm p-2  md:text-2xl md:w-[680px]   max-sm:text-md max-sm:w-[280px]">
@@ -68,9 +68,9 @@ export default function Carrousel() {
               className="object-contain "
             />
             <div className="absolute inset-0 flex flex-col items-center md:items-start md:pl-10 justify-center md:-translate-y-10">
-              <h1 className="text-white text-center md:text-left p-4 rounded md:text-3xl max-sm:text-2xl">
-                <span className="text-red-600">Qualidade</span> e Inovação{' '}
-                <br />
+              <h1 className="text-white text-center md:text-left p-4 rounded md:text-3xl max-sm:text-2xl font-bold">
+                <span className="text-red-600 font-bold">Qualidade</span> e
+                Inovação <br />
               </h1>
               <p className="text-white text-justify text-sm p-2 md:text-left md:text-2xl md:w-[680px] max-sm:w-[272px] max-sm:font-medium">
                 Nossos produtos são projetados para atender às demandas mais
@@ -92,10 +92,12 @@ export default function Carrousel() {
             <div className="absolute inset-0 flex flex-col items-center md:items-start md:pl-10 justify-center md:-translate-y-10">
               <h1
                 className="text-white text-center md:text-justify bg-black bg-opacity-50 p-4 rounded md:text-3xl
-              max-sm:font-bold
+              max-sm:font-bold lg:font-bold
               "
               >
-                <span className="text-red-600 max-sm:font-bold">Atendemos</span>{' '}
+                <span className="text-red-600 max-sm:font-bold lg:font-bold">
+                  Atendemos
+                </span>{' '}
                 Todos segmentos <br />
               </h1>
               <p className="text-white text-sm md:text-justify md:text-2xl md:w-[680px] bg-black bg-opacity-20 p-4 mt-2 rounded-sm max-sm:font-medium ">

@@ -35,11 +35,15 @@ export default function Control() {
       </p>
       <div className="flex flex-col gap-8">
         {/* LEFT IMG */}
-        <div className="flex  items-center max-sm:flex-col  ">
+        <div
+          className="flex  items-center max-sm:flex-col  lg:h-[440px]
+    
+        "
+        >
           <Image
             src={NotDestruct}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm max-sm:hidden"
+            className="w-1/2 lg:h-[440px] rounded-sm max-sm:hidden "
           />
           <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ml-4  max-sm:w-full ">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
@@ -63,7 +67,7 @@ export default function Control() {
         </div>
 
         {/* RIGHT IMG*/}
-        <div className="flex  items-center max-sm:flex-col ">
+        <div className="flex  items-center max-sm:flex-col lg:h-[440px]">
           <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ml-4   max-sm:w-full">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2 ">
               2
@@ -85,15 +89,15 @@ export default function Control() {
           <Image
             src={Destruct}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm max-sm:hidden"
+            className="w-1/2 h-[440px] rounded-sm max-sm:hidden"
           />
         </div>
 
-        <div className="flex  items-center max-sm:flex-col ">
+        <div className="flex  items-center max-sm:flex-col lg:h-[440px] ">
           <Image
             src={Corrosao}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm max-sm:hidden"
+            className="w-1/2 h-[440px] rounded-sm max-sm:hidden"
           />
           <div className="flex flex-col  justify-center  text-center w-1/2 p-6 ml-4 max-sm:w-full">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
@@ -112,7 +116,7 @@ export default function Control() {
           </div>
         </div>
 
-        <div className="flex  items-center max-sm:flex-col">
+        <div className="flex  items-center max-sm:flex-col lg:h-[440px]">
           <div className="flex flex-col  justify-center  text-center w-1/2 p-6 max-sm:w-full ">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
               4
@@ -135,15 +139,15 @@ export default function Control() {
           <Image
             src={Metalo}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm max-sm:hidden"
+            className="w-1/2 h-[440px] rounded-sm max-sm:hidden"
           />
         </div>
 
-        <div className="flex  items-center max-sm:flex-col ">
+        <div className="flex  items-center max-sm:flex-col lg:h-[440px] ">
           <Image
             src={Qumica}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm max-sm:hidden"
+            className="w-1/2 h-[440px] rounded-sm max-sm:hidden"
           />
           <div className="flex flex-col  justify-center  text-center w-1/2 p-6 max-sm:w-full">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
@@ -162,7 +166,7 @@ export default function Control() {
             </p>
           </div>
         </div>
-        <div className="flex  items-center max-sm:flex-col">
+        <div className="flex  items-center max-sm:flex-col lg:h-[440px]">
           <div className="flex flex-col  justify-center  text-center w-1/2 p-6 max-sm:w-full">
             <div className="bg-red-600 text-white text-lg font-bold p-2 w-10 h-10 lg:w-14 lg:h-14 items-center justify-center text-center rounded-sm mb-2">
               6
@@ -180,7 +184,7 @@ export default function Control() {
           <Image
             src={Metro}
             alt="Ensaios Mecânicos - Não Destrutivos"
-            className="w-1/2 h-auto rounded-sm max-sm:hidden"
+            className="w-1/2 h-[440px] rounded-sm max-sm:hidden"
           />
         </div>
       </div>
