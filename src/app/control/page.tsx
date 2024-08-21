@@ -33,6 +33,12 @@ export default function Control() {
         que cada peça que sai de nossa linha de produção esteja em conformidade
         com as especificações rigorosas e expectativas dos nossos clientes.
       </p>
+      <p className="mb-8 text-lg text-justify">
+        Política da Qualidade Buscar a melhoria contínua de nossos produtos e
+        processos através da produção de parafusos e peças especiais, a fim de
+        atender as necessidades de nossos clientes, proprietários, colaboradores
+        e requisitos legais
+      </p>
       <div className="flex flex-col gap-8">
         {/* LEFT IMG */}
         <div

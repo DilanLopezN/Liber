@@ -100,7 +100,7 @@ export default function AboutUs() {
             </p>
             <p className="text-lg mt-4">
               Liberale, filho de imigrantes italianos, começou sua jornada como
-              empreiteiro, mas rapidamente se destacou por sua enorme talento em
+              empreiteiro, mas rapidamente se destacou por seu enorme talento em
               mecânica, idealizando e aperfeiçoando máquinas agrícolas ainda na
               juventude. Seu espírito empreendedor o levou a fundar várias
               fábricas de parafusos ao longo de sua vida, cada uma contribuindo

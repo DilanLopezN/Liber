@@ -107,14 +107,7 @@ function Budget() {
             >
               Parafusos
             </button>
-            <button
-              onClick={() => setFormData({ ...formData, produto: 'Porcas' })}
-              className={`max-sm:w-full  flex-1 p-2 border border-gray-300 rounded ${
-                formData.produto === 'Porcas' ? 'bg-gray-300' : ''
-              }`}
-            >
-              Porcas
-            </button>
+
             <button
               onClick={() => setFormData({ ...formData, produto: 'Pinos' })}
               className={`max-sm:w-full  flex-1 p-2 border border-gray-300 rounded ${
@@ -123,14 +116,7 @@ function Budget() {
             >
               Pinos
             </button>
-            <button
-              onClick={() => setFormData({ ...formData, produto: 'Travas' })}
-              className={`max-sm:w-full  flex-1 p-2 border border-gray-300 rounded ${
-                formData.produto === 'Travas' ? 'bg-gray-300' : ''
-              }`}
-            >
-              Travas
-            </button>
+
             <button
               onClick={() => setFormData({ ...formData, produto: 'Fixadores' })}
               className={`max-sm:w-full  flex-1 p-2 border border-gray-300 rounded ${

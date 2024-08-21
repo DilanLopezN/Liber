@@ -29,7 +29,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
+      <link rel="icon" href="/Liber Parafusos 1.svg" sizes="any" />
       <Head>
         <title>Pagina principal | Liber</title>
         <meta
