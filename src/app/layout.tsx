@@ -30,7 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <link rel="icon" href="/Liber Parafusos 1.svg" sizes="any" />
+      <link
+        rel="shortcut icon"
+        href="/Liber Parafusos 1.svg"
+        type="image/x-icon"
+      />
+
       <Head>
         <title>Pagina principal | Liber</title>
         <meta
