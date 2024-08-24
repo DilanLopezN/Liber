@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import LogoLiber from '../../../public/LogoLiber.png'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -14,23 +15,38 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-2 mb-4 md:mb-0">
             <h3 className="text-lg font-medium">Explorar</h3>
             <ul className="p-4">
-              <li className="text-md font-medium m-2">Inicio</li>
-              <li className="text-md font-medium m-2">Sobre nós</li>
-              <li className="text-md font-medium m-2">Explorar</li>
-              <li className="text-md font-medium m-2">Serviços</li>
-              <li className="text-md font-medium m-2">Produtos</li>
-              <li className="text-md font-medium m-2">Controle de Qualidade</li>
-              <li className="text-md font-medium m-2">Orçamento</li>
-              <li className="text-md font-medium m-2">Contato</li>
+              <li className="text-md font-medium m-2">
+                <Link href="/">Inicio</Link>
+              </li>
+              <li className="text-md font-medium m-2">
+                <Link href="/about">Sobre nós</Link>
+              </li>
+
+              <li className="text-md font-medium m-2">
+                <Link href="/products">Produtos</Link>
+              </li>
+              <li className="text-md font-medium m-2">
+                <Link href="/control">Controle de Qualidade</Link>
+              </li>
+              <li className="text-md font-medium m-2">
+                <Link href="/budget">Orçamento</Link>
+              </li>
+              <li className="text-md font-medium m-2">
+                <Link href="/contact">Contato</Link>
+              </li>
             </ul>
           </div>
           <div className="flex flex-col items-center gap-2">
             <h3 className="text-lg font-medium">Legal</h3>
             <ul className="p-4">
-              <li className="text-md font-medium m-2">Termos</li>
-              <li className="text-md font-medium m-2">Documentação</li>
               <li className="text-md font-medium m-2">
-                Política de Privacidade
+                <Link href="/documents">Termos</Link>
+              </li>
+              <li className="text-md font-medium m-2">
+                <Link href="/documents">Documentação</Link>
+              </li>
+              <li className="text-md font-medium m-2">
+                <Link href="/control">Política de Privacidade</Link>
               </li>
             </ul>
           </div>

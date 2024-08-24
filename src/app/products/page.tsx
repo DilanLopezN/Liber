@@ -34,14 +34,20 @@ export default function Products() {
             rounded-md
             max-sm:w-[158px]
             max-sm:h-[118px]
-            flex w-[224px] h-[188px] items-center justify-center border p-4 hover:w-[268px] hover:h-[222px]
+            flex
+             w-[324px] 
+            h-[288px] 
+            items-center justify-center border p-4 
+            hover:w-[468px] hover:h-[322px]
             hover:transition-all
+
+       
             "
           >
             <img
               src={product.imageUrl}
               alt={''}
-              className="w-10/12 hover:w-full"
+              className="w-10/12 hover:w-full "
             />
           </div>
         ))}
