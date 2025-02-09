@@ -210,6 +210,27 @@ const Navbar = () => {
                   Orçamento
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/jobs"
+                  className={`lg:text-xl block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0
+                    
+                    ${
+                      isActive('/jobs')
+                        ? 'text-red-700 bg-transparent max-sm:bg-red-700 max-sm:text-white'
+                        : 'text-gray-700 bg-transparent max-sm:bg-white max-sm:text-black'
+                    }
+                    
+                    ${
+                      isActive('/jobs')
+                        ? ' lg:text-red-500 lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-white sm:bg-red-700'
+                        : 'lg:text-white lg:bg-transparent md:text-red-700 md:bg-transparent sm:text-black sm:bg-white'
+                    }`}
+                  aria-current="page"
+                >
+                  Trabalhe conosco
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
